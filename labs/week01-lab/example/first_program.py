@@ -10,7 +10,7 @@ print("My name is Your Name")
 # Write three print statements that display:
 # Line 1: Your name
 # Line 2: Your age
-# Line 3: Your favorite hobbyๅ
+# Line 3: Your favorite hobby
 # Write your code here:
 
 
