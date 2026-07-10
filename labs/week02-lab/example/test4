@@ -1,0 +1,25 @@
+# Shopping Calculator Template
+
+item_price = float(input("Enter item price: "))
+quantity = int(input("Enter quantity: "))
+discount_percent = float(input("Enter discount %: "))
+tax_percent = float(input("Enter tax %: "))
+
+# TODO: Calculate subtotal
+# TODO: Calculate discount amount
+# TODO: Calculate price after discount
+# TODO: Calculate tax amount
+# TODO: Calculate final total
+# TODO: Display itemized receip
+
+subtotal = item_price * quantity
+discount = subtotal * (discount_percent / 100)
+price = subtotal - discount
+tax = price = (tax_percent / 100)
+final_total = price + tax
+
+print("Subtotal = ", subtotal)
+print("Discount = ", discount)
+print("Price After Discount = ", price)
+print("Tax = ", tax)
+print("Final Total = ", final_total)
