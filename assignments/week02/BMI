@@ -1,0 +1,21 @@
+#BMI Categories:
+#Below 18.5: Underweight
+#18.5 - 24.9: Normal weight
+#25.0 - 29.9: Overweight
+#30.0 and above: Obese
+
+weight = float(input("Enter Weight (Kg) : "))
+height = float(input("Enter Height (meter) : "))
+
+bmi = weight / (height ** 2)
+
+print(f"BMI : {bmi:.1f}")
+
+if bmi < 18.5:
+    print("You Underweight")
+elif bmi < 25:
+    print("You Normal weight")
+elif bmi < 30:
+    print("You OverWeight")
+else:
+    print("You Obese")

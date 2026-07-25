@@ -1,0 +1,22 @@
+"""
+Write a program that converts between Thai Baht (THB) and US Dollars (USD).
+Requirements:
+
+Ask user to choose conversion direction (THB to USD or USD to THB)
+Ask for the amount to convert
+Use exchange rate: 1 USD = 35.5 THB
+Display result with 2 decimal places
+Show the calculation formula used
+"""
+
+choose = int(input("Select 1 for (THB to USD) !! Select 2 (USD to THB) : "))
+Amount = float(input("Your Amount : "))
+
+if choose == 1:
+    result = Amount / 35.5
+    print(f"result : {result}")
+    print("result = Amount / 35.5")
+elif choose == 2:
+    result = Amount * 35.5
+    print(f"result : {result}")
+    print("result = Amount * 35.5")
