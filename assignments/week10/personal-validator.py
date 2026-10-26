@@ -18,7 +18,7 @@ Enter your age: 25
 Enter your phone number: 9876543210
 
 Validation Results:
-Name: Valid (contains only letters and spaces)
+Name: Valid (contains only letters and spaces).w
 Age: Valid (25 years old)
 Phone: Valid (10-digit number)
 
