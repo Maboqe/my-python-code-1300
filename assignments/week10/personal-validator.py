@@ -18,7 +18,7 @@ Enter your age: 25
 Enter your phone number: 9876543210
 
 Validation Results:
-Name: Valid (contains only letters and spaces).w
+Name: Valid (contains only letters and spaces)
 Age: Valid (25 years old)
 Phone: Valid (10-digit number)
 
@@ -28,7 +28,6 @@ Age Group: Young Adult (18-30)
 Phone: +91-9876543210
 
 """
-
 print("=== PERSONAL INFORMATION VALIDATOR ===")
 name = input("Enter your name:")
 age = int(input("Enter your age:"))
