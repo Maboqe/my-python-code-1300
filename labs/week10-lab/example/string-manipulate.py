@@ -147,9 +147,12 @@ print(f"id of str3 is {id(str3)}")  # Same ID as current str1
 print("\n=== ESCAPE CHARACTERS ===")
 print("New line example:")
 print("Line 1\nLine 2")
+## = Line 1
+## = Line 2
 
 print("Tab example:")
 print("Column1\tColumn2\tColumn3")
+## = Column1  Column2  Column3
 
 print("Backslash example:")
 print("Path: C:\\Users\\Python")
@@ -184,10 +187,12 @@ name = 'shankar'
 sal = 20000
 
 # Different format styles
-str1 = '{},{},{}'.format(id_num, name, sal)
+str1 = '{},{},{}'.format(id_num, name, sal) # Same 191
+str1 = f'{id_num},{name},{sal}' ## Same 190
 print(str1)  # 10,shankar,20000
 
-str2 = '{} - {} - {}'.format(id_num, name, sal)
+str2 = '{} - {} - {}'.format(id_num, name, sal) # Same 195
+str2 = f'{id_num} - {name } - {sal}' #Same 194
 print(str2)  # 10 - shankar - 20000
 
 str3 = 'id={}\nname={}\nsal={}'.format(id_num, name, sal)
@@ -202,21 +207,21 @@ text = "welcome to the world of python"
 
 # Case methods
 print(f"Original: {text}")
-print(f"Upper: {text.upper()}")
-print(f"Lower: {text.lower()}")
-print(f"Title: {text.title()}")
-print(f"Capitalize: {text.capitalize()}")
+print(f"Upper: {text.upper()}") ## ตัวพิมพ์ ใหญ่
+print(f"Lower: {text.lower()}") ## ตัวพิมพ์ เล็ก
+print(f"Title: {text.title()}") ## 
+print(f"Capitalize: {text.capitalize()}") ## ตัวอักษร แรก ทุกตัวเป็นตัว พิมพ์ ใหญ่
 
 # Search methods
-print(f"Find 'world': {text.find('world')}")
-print(f"Count 'o': {text.count('o')}")
-print(f"Starts with 'welcome': {text.startswith('welcome')}")
-print(f"Ends with 'python': {text.endswith('python')}")
+print(f"Find 'world': {text.find('world')}") ## หาคำว่า wold อยู่ตัวที่เท่าไหร่
+print(f"Count 'o': {text.count('o')}") ## นับตัวอักษร o มีกี่ตัว
+print(f"Starts with 'welcome': {text.startswith('welcome')}") ## ขึ้นตัวด้วย welcome มั้ย
+print(f"Ends with 'python': {text.endswith('python')}") ## จบที่คำว่า python มั้ย
 
 # Modification methods
 print(f"Replace 'python' with 'java': {text.replace('python', 'java')}")
-words = text.split()
-print(f"Split into words: {words}")
+words = text.split() ## แปลงเป็น list ของ ['welcome', 'to', 'the', 'wold', 'of', 'java']
+print(f"Split into words: {words}") ## ['welcome', 'to', 'the', 'wold', 'of', 'java']
 print(f"Join with '-': {'-'.join(words)}")
 
 # Validation methods
